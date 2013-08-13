@@ -1,6 +1,6 @@
 This is a tool which takes data and creates an interface for exploring said data.
 
-There are three files which are requried. Data (required), Feature and Tree.
+There are three files which are required: data.csv, features.txt and tree.xml.
 
 Data needs to be in *.csv (Comma Separated Value) format, and named data.csv. Assuming your data is already in an Excel spreadsheet, this can be achieved by clicking "Save as .." and choosing the csv format. The data needs to be structured as follows:
 		Lg1		Lg2		Lg3		.
