@@ -1,15 +1,15 @@
 This is a tool which takes data and creates an interface for exploring said data.
 
-There are three files, two of which are optional. Data (required), Feature and Tree.
+There are three files which are requried. Data (required), Feature and Tree.
 
-Data needs to be in *.csv (Comma Separated Value) format, and preferably named data.csv. Assuming your data is already in an Excel spreadsheet, this can be achieved by clicking "Save as .." and choosing the csv format. The data needs to be structured as follows:
+Data needs to be in *.csv (Comma Separated Value) format, and named data.csv. Assuming your data is already in an Excel spreadsheet, this can be achieved by clicking "Save as .." and choosing the csv format. The data needs to be structured as follows:
 		Lg1		Lg2		Lg3		.
 gloss	form	form	form	.
 gloss	form	form	form	.
 gloss	form	form	form	.
 		.		.		.
 
-The Feature file needs to be in *.txt (text) format. Here is an example file
+The Feature file needs to be named features.txt. Here is an example file
 p labial plosive
 b voiced labial plosive
 k velar plosive
@@ -17,7 +17,7 @@ g voiced velar plosive
 
 Note that you can name the features whatever you want, as long as you label all the phonemes in the data set. Also note that the software assumes that all features are binary, so you only need to mark them if they are marked for that feature (e.g. in the above example, [-voiced] was not marked).
 
-The Tree file needs to be a *.xml (eXtensible Markup Language) format. An example is as follows:
+The Tree file needs to be a *.xml (eXtensible Markup Language) format and named tree.xml. An example is as follows:
 <Root>
 	<Subgroup1>
 		<Cousin/>
