@@ -24,11 +24,12 @@ make_phonemes_from_file = function(filename)
 	{
 		#TODO skip blank lines and such
 		tokens = strsplit(line,"\\s+")[[1]]
-		ret[["a"]] = c(ret[["a"]],tokens[1])
+		#ret[["a"]] = c(ret[["a"]],tokens[1])
 		for(i in 2:length(tokens))
 			# add phoneme to list of phonemes with that feature
 			ret[[ tokens[i] ]] = c(ret[[ tokens[i]  ]], tokens[1])
 	}
+	ret[["?"]] = ".*"
 	ret
 }
 
