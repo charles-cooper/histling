@@ -59,7 +59,7 @@ shinyServer = function(input,output,session)
 	lects = unlist(unique({
 		display_groups = input$display_groups
 		if (0==length(display_groups))
-			display_groups = "Qiang"
+			display_groups = xmlName(xmlRoot(tree))
 		getCities(tree, display_groups)
 	}))
 	#TODO as.matrix is because otherwise one column case breaks for some reason. fix!!
