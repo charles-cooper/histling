@@ -4,7 +4,7 @@ library(XML)
 make_table_from_file = function(filename)
 {
 	data = read.csv(filename,header=T)
-	rownames(data) = make.unique(data[,1],sep="")
+	rownames(data) = make.unique(as.character(data[,1]),sep=".")
 	colnames(data) = gsub("\\.","",colnames(data))
 	data = data[,2:ncol(data)]
 	data
